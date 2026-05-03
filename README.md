@@ -8,6 +8,8 @@ Anggota Kelompok:
 
 -Yovitha Gracia Tavares_202412044
 
+A. Code hasil awal bug 1
+
 ![Hasil Progam](contoheror.png)
 
        }
