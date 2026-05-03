@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Data Mahasiswa</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin: 20px;
+            background: #f5f5f5;
+        }
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 15px;
+            box-sizing: border-box; /* Tambahan agar padding tidak merusak lebar 100% */
+        }
+
+        /* Khusus untuk textarea agar tidak bisa diubah ukurannya */
+        textarea {
+            resize: none;
+            height: 80px; /* Menentukan tinggi kotak alamat */
+        }
+        button {
+            padding: 10px;
+            margin-right: 5px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .submit { background: green; color: white; }
+        .reset { background: orange; color: white; }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #fff;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .icon-aksi {
+            width: 20px;       /* Atur lebar gambar */
+            height: 20px;      /* Atur tinggi gambar */
+            object-fit: cover; /* Agar gambar tidak gepeng */
+            vertical-align: middle;
+        }
+
+        .aksi a {
+            display: inline-block;
+            padding: 2px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Form Data Mahasiswa</h2>
+
+<form id="formMahasiswa">
+    <label>NIM</label>
+    <input type="text" id="nim" required>
+
+    <label>Nama</label>
+    <input type="text" id="nama" required>
+
+    <label>Alamat</label>
+    <textarea id="alamat"></textarea>
+
+    <label>Jenis Kelamin</label><br>
+    <input type="radio" name="jk" value="Pria"> Pria
+    <input type="radio" name="jk" value="Wanita"> Wanita
+    <br><br>
+
+    <label>Tanggal Lahir</label>
+    <select id="tanggal"></select>
+    <select id="bulan">
+        <option value="01">Januari</option>
+        <option value="02">Februari</option>
+        <option value="03">Maret</option>
+        <option value="04">April</option>
+        <option value="05">Mei</option>
+        <option value="06">Juni</option>
+        <option value="07">Juli</option>
+        <option value="08">Agustus</option>
+        <option value="09">September</option>
+        <option value="10">Oktober</option>
+        <option value="11">November</option>
+        <option value="12">Desember</option>
+    </select>
+    <select id="tahun"></select>
+
+    <label>Password</label>
+    <input type="password" id="password">
+
+    <button type="submit" class="submit">Submit</button>
+    <button type="reset" class="reset">Reset</button>
+</form>
+
+<h2>Data Mahasiswa</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>NIM</th>
+            <th>Nama</th>
+            <th>Alamat</th>
+            <th>JK</th>
+            <th>TTL</th>
+            <th>Password</th>
+            <th>Aksi</th>
+        </tr>
+    </thead>
+    <tbody id="tableBody"></tbody>
+</table>
+
+<script>
+    const form = document.getElementById("formMahasiswa");
+    const tableBody = document.getElementById("tableBody");
+
+    // ===== DROPDOWN TANGGAL =====
+    function isiTanggal(max = 31) {
+        const tgl = document.getElementById("tanggal");
+        tgl.innerHTML = "";
+        for (let i = 1; i <= max; i++) {
+            // PERBAIKAN: Gunakan backtick (`)
+            tgl.innerHTML += `<option value="${i}">${i}</option>`;
+        }
+    }
+
+    isiTanggal();
+
+    document.getElementById("bulan").addEventListener("change", function() {
+        const bulan = this.value;
+        let maxHari = 31;
+
+        if (["04","06","09","11"].includes(bulan)) maxHari = 30;
+        if (bulan === "02") maxHari = 28;
+
+        isiTanggal(maxHari);
+    });
+
+    // ===== DROPDOWN TAHUN =====
+    const currentYear = new Date().getFullYear();
+    for (let i = 1990; i <= currentYear; i++) {
+        // PERBAIKAN: Gunakan backtick (`)
+        document.getElementById("tahun").innerHTML += `<option value="${i}">${i}</option>`;
+    }
+
+    // ===== LOAD DATA =====
+    window.onload = function() {
+        const data = JSON.parse(localStorage.getItem("mahasiswa")) || [];
+        data.forEach(d => tambahBaris(d));
+    };
+
+    // ===== SUBMIT =====
+    form.addEventListener("submit", function(e) {
+        e.preventDefault();
+
+        const nim = document.getElementById("nim").value.trim();
+        const nama = document.getElementById("nama").value.trim();
+        const alamat = document.getElementById("alamat").value;
+
+        // VALIDASI NIM DUPLIKAT
+        const rows = tableBody.querySelectorAll("tr");
+        for (let r of rows) {
+            if (r.children[0].innerText === nim) {
+                alert("NIM sudah ada!");
+                return;
+            }
+        }
+
+        // VALIDASI JENIS KELAMIN
+        const selectedJK = document.querySelector('input[name="jk"]:checked');
+        if (!selectedJK) {
+            alert("Silakan pilih jenis kelamin!");
+            return;
+        }
+        const jk = selectedJK.value;
+
+        let tanggal = document.getElementById("tanggal").value;
+        const bulan = document.getElementById("bulan").value;
+        const tahun = document.getElementById("tahun").value;
+
+        tanggal = tanggal.padStart(2, "0");
+        // PERBAIKAN: Gunakan backtick (`)
+        const ttl = `${tanggal}-${bulan}-${tahun}`;
+
+        const password = document.getElementById("password").value;
+
+        const dataBaru = { nim, nama, alamat, jk, ttl, password };
+
+        tambahBaris(dataBaru);
+
+        // SIMPAN KE LOCALSTORAGE
+        let data = JSON.parse(localStorage.getItem("mahasiswa")) || [];
+        data.push(dataBaru);
+        localStorage.setItem("mahasiswa", JSON.stringify(data));
+
+        form.reset();
+    });
+
+    function tambahBaris(d) {
+        const row = document.createElement("tr");
+
+        row.innerHTML = `
+            <td>${d.nim}</td>
+            <td>${d.nama}</td>
+            <td>${d.alamat}</td>
+            <td>${d.jk}</td>
+            <td>${d.ttl}</td>
+            <td>${d.password}</td>
+            <td>
+                <a href="#" onclick="editRow(this)">
+                    <img src="pensil.png" width="20">
+                </a>
+                <a href="#" onclick="deleteRow(this)">
+                    <img src="garbage.png" width="20">
+                </a>
+            </td>
+        `;
+
+        tableBody.appendChild(row);
+    }
+
+    function deleteRow(el) {
+        if(!confirm("Hapus data ini?")) return;
+        
+        const row = el.parentElement.parentElement;
+        const nim = row.children[0].innerText;
+
+        row.remove();
+
+        let data = JSON.parse(localStorage.getItem("mahasiswa")) || [];
+        data = data.filter(d => d.nim !== nim);
+        localStorage.setItem("mahasiswa", JSON.stringify(data));
+    }
+
+    function editRow(el) {
+        const row = el.parentElement.parentElement;
+        const cells = row.children;
+
+        // Pindahkan data ke form
+        document.getElementById("nim").value = cells[0].innerText;
+        document.getElementById("nama").value = cells[1].innerText;
+        document.getElementById("alamat").value = cells[2].innerText;
+        document.getElementById("password").value = cells[5].innerText;
+
+        // Hapus data lama dari tabel dan localStorage agar saat di-submit dianggap data baru/update
+        const nimLama = cells[0].innerText;
+        row.remove();
+        
+        let data = JSON.parse(localStorage.getItem("mahasiswa")) || [];
+        data = data.filter(d => d.nim !== nimLama);
+        localStorage.setItem("mahasiswa", JSON.stringify(data));
+    }
+</script>
+
+</body>
+</html>
