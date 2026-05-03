@@ -1,12 +1,9 @@
 <h1 align="center">KELOMPOK PEMROGRAMAN WEB</h1>
 
 Anggota Kelompok:
-
--Muhammad Dwi Firmansyah_202412012
-
--Nabil
-
--Yovitha Gracia Tavares_202412044
+Muhammad Dwi Firmansyah_202412012
+Nabil
+Yovitha Gracia Tavares_202412044
 
 A. Code hasil awal bug 1
 
