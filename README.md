@@ -1,4 +1,4 @@
-KELOMPOK PEMROGRAMAN WEB
+<h1 align="center">KELOMPOK PEMROGRAMAN WEB</h1>
 Anggota Kelompok:
 -Muhammad Dwi Firmansyah_202412012
 -Nabil
