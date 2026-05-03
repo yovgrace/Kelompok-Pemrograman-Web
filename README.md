@@ -9,7 +9,7 @@ Anggota Kelompok:
 -Yovitha Gracia Tavares_202412044
 
 ![Hasil Progam](contoheror.png)
-![Hasil Progam](contoheror.png)
+
        }
         input, textarea, select {
             width: 100%;
