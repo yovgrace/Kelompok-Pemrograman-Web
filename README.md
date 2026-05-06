@@ -23,8 +23,6 @@ Solusi atau perbaikan
 <img width="1885" height="601" alt="output perbaikan" src="https://github.com/user-attachments/assets/7df0de91-100c-4734-aa63-7aeee23167c1" />
 
 Penjelasan perbaikan :
-Pada kode perbaikan ini, perubahan yang dilakukan adalah menambahkan atribut placeholder pada setiap field input. Field NIM diberi placeholder "Masukkan NIM", field Nama diberi placeholder "Masukkan Nama Lengkap", dan textarea Alamat diberi placeholder "Masukkan Alamat Lengkap" sekaligus ditambahkan atribut required. Penambahan ini bertujuan agar pengguna mendapat petunjuk tentang data yang harus diisi dan semua field wajib diisi sebelum form dikirim. Namun, masalah pada bagian radio button "Jenis Kelamin" masih belum diperbaiki, karena teks "Pria" dan "Wanita" masih ditulis langsung setelah tag <input> tanpa menggunakan tag <label for="..."> yang benar, sehingga tampilannya di output masih berantakan dan tidak sejajar.
-
-
+Pada kode perbaikan ini, terdapat beberapa perubahan yang dilakukan untuk menyempurnakan tampilan form. Perubahan pertama yang cukup terlihat adalah penambahan atribut placeholder pada setiap field input. Pada field NIM ditambahkan placeholder "Masukkan NIM", pada field Nama ditambahkan placeholder "Masukkan Nama Lengkap", dan pada textarea Alamat ditambahkan placeholder "Masukkan Alamat Lengkap". Tujuan dari penambahan placeholder ini adalah untuk memberikan petunjuk kepada pengguna tentang data apa yang harus diisi pada masing-masing kolom, sehingga form menjadi lebih informatif dan mudah dipahami. Selain itu, pada field textarea Alamat juga ditambahkan atribut required, sama seperti field NIM dan Nama. Hal ini bertujuan agar pengguna tidak bisa mengosongkan field Alamat saat mengisi form, sehingga semua data penting wajib diisi sebelum form dapat dikirimkan.
 
 
