@@ -11,7 +11,7 @@ Yovitha Gracia Tavares_202412044
 
 A. Code dan hasil awal
 
-![Uploading image.png](bug 1.png)
+(https://github.com/yovgrace/Kelompok-Pemrograman-Web/blob/main/bug%201.png)
 
 
 
