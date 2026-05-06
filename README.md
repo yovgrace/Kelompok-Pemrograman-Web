@@ -11,7 +11,8 @@ Yovitha Gracia Tavares_202412044
 
 A. Code dan hasil awal
 
-![Hasil Program](bug 1.png) 
+![Uploading image.png](bug 1)
+
 
 
 
