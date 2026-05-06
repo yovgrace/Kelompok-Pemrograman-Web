@@ -9,7 +9,7 @@ Nabil
 Yovitha Gracia Tavares_202412044
 
 
-A. Code dan hasil awal bug 1
+1. Code dan hasil awal bug 1
 
 <img width="1589" height="318" alt="codinganawal png" src="https://github.com/user-attachments/assets/8e201eff-8a32-4607-a794-b1a0d014ecd9" />
 <img width="1884" height="545" alt="output" src="https://github.com/user-attachments/assets/0d25ef58-dd5b-4cfd-b923-4461bea509b4" />
@@ -24,5 +24,11 @@ Solusi atau perbaikan
 
 Penjelasan perbaikan :
 Pada kode perbaikan ini, terdapat beberapa perubahan yang dilakukan untuk menyempurnakan tampilan form. Perubahan pertama yang cukup terlihat adalah penambahan atribut placeholder pada setiap field input. Pada field NIM ditambahkan placeholder "Masukkan NIM", pada field Nama ditambahkan placeholder "Masukkan Nama Lengkap", dan pada textarea Alamat ditambahkan placeholder "Masukkan Alamat Lengkap". Tujuan dari penambahan placeholder ini adalah untuk memberikan petunjuk kepada pengguna tentang data apa yang harus diisi pada masing-masing kolom, sehingga form menjadi lebih informatif dan mudah dipahami. Selain itu, pada field textarea Alamat juga ditambahkan atribut required, sama seperti field NIM dan Nama. Hal ini bertujuan agar pengguna tidak bisa mengosongkan field Alamat saat mengisi form, sehingga semua data penting wajib diisi sebelum form dapat dikirimkan.
+
+
+2. Code dan hasil bug 2
+
+
+   
 
 
