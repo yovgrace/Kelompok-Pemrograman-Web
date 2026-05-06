@@ -17,6 +17,10 @@ Penjelasan bug : Radio button terpisah dari labelnya — di output, label teks (
 Teks label ditulis langsung setelah tag input (bukan dibungkus <label>)
 Karena tidak ada struktur pembungkus, browser merender semuanya dalam satu baris panjang yang overflow dan berantakan
 
-Solusi atau perbaikan :
+
+
+Solusi atau perbaikan
+<img width="1575" height="335" alt="Perbaikan" src="https://github.com/user-attachments/assets/bfbae3c2-a9b4-44cf-a62b-51d5fb85d8ea" />
+
 
 
