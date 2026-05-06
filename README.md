@@ -9,7 +9,7 @@ Nabil
 Yovitha Gracia Tavares_202412044
 
 
-A. Code dan hasil awal
+A. Code dan hasil awal bug 1
 
 <img width="1589" height="318" alt="codinganawal png" src="https://github.com/user-attachments/assets/8e201eff-8a32-4607-a794-b1a0d014ecd9" />
 
