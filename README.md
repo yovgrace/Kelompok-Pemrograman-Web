@@ -9,9 +9,8 @@ Nabil
 Yovitha Gracia Tavares_202412044
 
 
-A. Code hasil awal bug 1
+A. Code dan hasil awal
 
-![Hasil Progam](contoheror.png)
 
        }
         input, textarea, select {
