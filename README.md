@@ -79,7 +79,7 @@ Potongan kode perbaikan tersebut menggunakan teknik **masking** untuk menyembuny
 
 5. Code dan hasil bug 5
 
-Icon aksi diubah menjadi gambar
+   Icon aksi diubah menjadi gambar
    <img width="805" height="216" alt="bug 5 (2)" src="https://github.com/user-attachments/assets/af2c0095-58f5-426f-bebf-a2c12a3f6815" />
    <img width="226" height="152" alt="bug 5" src="https://github.com/user-attachments/assets/07668e14-a307-4aab-a1b2-4a52508be2db" />
 
