@@ -60,7 +60,8 @@ Potongan kode tersebut mendefinisikan struktur input untuk kolom Nama dalam sebu
 
 
 4. Code dan hasil bug 4
-   
+   <img width="821" height="48" alt="bug 4 (2)" src="https://github.com/user-attachments/assets/cba3be73-52c6-4c51-a259-6fe048d7247b" />
+
    
 
 
