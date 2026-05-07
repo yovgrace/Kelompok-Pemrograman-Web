@@ -85,6 +85,9 @@ Kode tersebut mengandung bug yang menyebabkan ikon pada kolom **Aksi** tidak mun
 
 
 Solusi atau perbaikan :
+<img width="1605" height="264" alt="perbaikan bug 5" src="https://github.com/user-attachments/assets/cb6dc2a4-099f-40f5-b34a-52decc57026c" />
+<img width="267" height="176" alt="output perbaikan bug 5" src="https://github.com/user-attachments/assets/f05d2050-0227-4ea3-a001-494e2ebdc32e" />
+
 
 
 
