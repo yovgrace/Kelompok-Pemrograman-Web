@@ -108,7 +108,7 @@ Potongan kode perbaikan tersebut memperbarui elemen kolom **Aksi** dengan memast
 
 
    Penjelasan bug :
-Berdasarkan gambar kode diatas, kode tersebut memiliki bug atau kesalahan logika pada bagian validasi input di mana kondisi if (!nim || !nama ||   !alamat || !password || !selectedJenisKelamin) akan memicu jendela peringatan alert("Gagal! Semua kolom wajib diisi dengan benar.") dan menghentikan proses eksekusi dengan perintah return apabila salah satu dari variabel tersebut bernilai kosong, null, atau undefined, namun pada tag HTML <form> ditambahkan atribut novalidate yang menonaktifkan validasi bawaan browser sehingga seluruh pengecekan bergantung sepenuhnya pada logika JavaScript tersebut.
+Berdasarkan gambar kode diatas, kode tersebut memiliki bug atau kesalahan logika pada bagian validasi input di mana kondisi if (!nim || !nama ||   !alamat || !password || !selectedJenisKelamin) akan memicu jendela peringatan alert("Gagal! Semua kolom wajib diisi dengan benar.") dan menghentikan proses eksekusi dengan perintah return apabila salah satu dari variabel tersebut bernilai kosong, null, atau undefined, namun pada tag HTML<form> ditambahkan atribut novalidate yang menonaktifkan validasi bawaan browser sehingga seluruh pengecekan bergantung sepenuhnya pada logika JavaScript tersebut.
 
 
  
