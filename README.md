@@ -89,6 +89,10 @@ Solusi atau perbaikan :
 <img width="267" height="176" alt="output perbaikan bug 5" src="https://github.com/user-attachments/assets/f05d2050-0227-4ea3-a001-494e2ebdc32e" />
 
 
+Penejelasan perbaikan :
+Potongan kode perbaikan tersebut memperbarui elemen kolom **Aksi** dengan memastikan sumber gambar (`src`) merujuk pada file yang benar, yaitu `pensil.png` dan `garbage.png`, sehingga ikon dapat merender dengan sempurna pada tabel. Di dalam tag `<img>`, ditambahkan atribut `alt` sebagai teks alternatif untuk aksesibilitas dan `class="icon-aksi"` untuk standarisasi gaya visual melalui CSS. Secara fungsional, setiap ikon dibungkus oleh tag jangkar (`<a>`) yang menjalankan fungsi JavaScript `editRow(this)` dan `deleteRow(this)` ketika diklik, dan seluruh rangkaian baris tersebut akhirnya disisipkan ke dalam dokumen menggunakan perintah `tableBody.appendChild(row)`.
+
+
 
 
  
