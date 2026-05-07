@@ -10,9 +10,8 @@ Yovitha Gracia Tavares_202412044
 
 
 1. Code dan hasil bug 1
-
-<img width="1589" height="318" alt="codinganawal png" src="https://github.com/user-attachments/assets/8e201eff-8a32-4607-a794-b1a0d014ecd9" />
-<img width="1884" height="545" alt="output" src="https://github.com/user-attachments/assets/0d25ef58-dd5b-4cfd-b923-4461bea509b4" />
+   <img width="381" height="117" alt=" bug 1" src="https://github.com/user-attachments/assets/570ebbc2-1e31-41a2-a9c9-59d3e609ba06" />
+   <img width="642" height="215" alt="output bug 1" src="https://github.com/user-attachments/assets/f9ffb069-afb6-4610-b938-c6f315e97048" />
 
 Penjelasan bug : 
 Radio button terpisah dari labelnya — di output, label teks ("Pria", "Wanita") muncul di baris terpisah dan tidak sejajar dengan radio buttonnya. Radio button malah muncul di tengah halaman (terlalu ke kanan), sedangkan teks labelnya ada di kiri bawah. Tidak ada <br> atau pemisah antar setiap radio button Teks label ditulis langsung setelah tag input (bukan dibungkus <label>) Karena tidak ada struktur pembungkus, browser merender semuanya dalam satu baris panjang yang overflow dan berantakan.
