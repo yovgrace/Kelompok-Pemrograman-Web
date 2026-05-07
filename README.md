@@ -80,8 +80,8 @@ Potongan kode perbaikan tersebut menggunakan teknik **masking** untuk menyembuny
    <img width="805" height="216" alt="bug 5 (2)" src="https://github.com/user-attachments/assets/af2c0095-58f5-426f-bebf-a2c12a3f6815" />
    <img width="226" height="152" alt="bug 5" src="https://github.com/user-attachments/assets/07668e14-a307-4aab-a1b2-4a52508be2db" />
 
-   Penejelasan bug :
-   
+Penjelasan bug :
+Kode tersebut mengandung bug yang menyebabkan ikon pada kolom **Aksi** tidak muncul atau pecah (*broken image*), seperti yang terlihat pada gambar output. Secara teknis, masalah ini terjadi karena jalur file (*file path*) pada atribut `src="edit.png"` dan `src="trash.png"` tidak valid atau file gambar tersebut tidak ditemukan di direktori yang sama dengan file HTML/JS tersebut. Meskipun secara struktur kode HTML di dalam *template literal* sudah benar menggunakan tag `<a>` untuk fungsi `editRow` dan `deleteRow`, browser gagal memuat aset visualnya sehingga hanya menampilkan ikon *placeholder* gambar rusak.
 
 
  
