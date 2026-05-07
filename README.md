@@ -14,7 +14,7 @@ Yovitha Gracia Tavares_202412044
    <img width="642" height="215" alt="output bug 1" src="https://github.com/user-attachments/assets/f9ffb069-afb6-4610-b938-c6f315e97048" />
 
 Penjelasan bug : 
-Radio button terpisah dari labelnya — di output, label teks ("Pria", "Wanita") muncul di baris terpisah dan tidak sejajar dengan radio buttonnya. Radio button malah muncul di tengah halaman (terlalu ke kanan), sedangkan teks labelnya ada di kiri bawah. Tidak ada <br> atau pemisah antar setiap radio button Teks label ditulis langsung setelah tag input (bukan dibungkus <label>) Karena tidak ada struktur pembungkus, browser merender semuanya dalam satu baris panjang yang overflow dan berantakan.
+Kode tersebut menggunakan Regular Expression (Regex) /^\d+$/ untuk memastikan bahwa data yang dimasukkan ke dalam variabel nim adalah angka murni. Simbol ^ menandakan awal baris, \d+ berarti harus terdapat satu atau lebih karakter angka, dan $ menandakan akhir baris, sehingga jika pengguna memasukkan karakter selain angka (seperti huruf atau spasi), metode .test(nim) akan menghasilkan nilai false. Karena terdapat operator negasi ! di depan Regex tersebut, maka kondisi if akan bernilai true saat input salah, yang kemudian memicu munculnya pesan alert("NIM harus berupa angka!") dan perintah return untuk menghentikan proses eksekusi kode selanjutnya (seperti pengiriman data ke database).
 
 
 Solusi atau perbaikan
