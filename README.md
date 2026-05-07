@@ -102,9 +102,10 @@ Potongan kode perbaikan tersebut memperbarui elemen kolom **Aksi** dengan memast
 
    Semua data wajib di isi tanpa ada yang kosong
    <img width="320" height="49" alt="kode bug 6" src="https://github.com/user-attachments/assets/8fee34c7-c064-48f7-a746-5c20afce98e1" />
-   
    <img width="826" height="141" alt="bug 6" src="https://github.com/user-attachments/assets/33f16a79-f8f3-46b1-92b8-f15fe5b77f0e" />
-    
+
+   Penjelasan bug :
+    Berdasarkan gambar kode diatas, kode tersebut memiliki bug atau kesalahan logika pada bagian validasi input di mana kondisi if (!nim || !nama ||   !alamat || !password || !selectedJenisKelamin) akan memicu jendela peringatan alert("Gagal! Semua kolom wajib diisi dengan benar.") dan menghentikan proses eksekusi dengan perintah return apabila salah satu dari variabel tersebut bernilai kosong, null, atau undefined, namun pada tag HTML <form> ditambahkan atribut novalidate yang menonaktifkan validasi bawaan browser sehingga seluruh pengecekan bergantung sepenuhnya pada logika JavaScript tersebut.
 
 
  
