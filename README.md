@@ -65,6 +65,9 @@ Potongan kode tersebut mendefinisikan struktur input untuk kolom Nama dalam sebu
 
 Penjelasan bug   : 
 Potongan kode JavaScript tersebut berfungsi untuk memproses data pendaftaran, di mana baris pertama menggabungkan variabel `tanggal`, `bulan`, dan `tahun` menjadi satu string format tanggal lahir (**ttl**) menggunakan *template literals*. Baris kedua mengambil nilai dari elemen input dengan ID `password` menggunakan perintah `document.getElementById("password").value` untuk disimpan ke dalam konstanta `password`. Masalah atau "bug" pada implementasi ini terlihat dari hasil *output*-nya, di mana nilai kata sandi tampil sebagai teks terbuka (**12345**) di dalam tabel; hal ini menunjukkan bahwa meskipun kodenya secara sintaksis benar, terdapat kesalahan pada tipe input di sisi HTML yang tidak menggunakan `type="password"`, sehingga data sensitif tersebut tidak terenkripsi atau tersembunyi saat ditampilkan kembali.
+
+
+  Solusi atau perbaikan :
   
 
    
