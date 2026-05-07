@@ -10,6 +10,7 @@ Yovitha Gracia Tavares_202412044
 
 
 1. Code dan hasil bug 1
+   
    NIM hanya berisi angka
    <img width="381" height="117" alt=" bug 1" src="https://github.com/user-attachments/assets/570ebbc2-1e31-41a2-a9c9-59d3e609ba06" />
    <img width="642" height="215" alt="output bug 1" src="https://github.com/user-attachments/assets/f9ffb069-afb6-4610-b938-c6f315e97048" />
