@@ -21,7 +21,7 @@ Kode tersebut menggunakan Regular Expression (Regex) /^\d+$/ untuk memastikan ba
 
 Solusi atau perbaikan
 <img width="1575" height="335" alt="Perbaikan" src="https://github.com/user-attachments/assets/bfbae3c2-a9b4-44cf-a62b-51d5fb85d8ea" />
-<img width="1885" height="601" alt="output perbaikan" src="https://github.com/user-attachments/assets/7df0de91-100c-4734-aa63-7aeee23167c1" />
+<img width="712" height="183" alt="perbaikan bug 1" src="https://github.com/user-attachments/assets/4789540d-c66f-4db8-9719-b29fecd50215" />
 
 Penjelasan perbaikan :
 Pada kode perbaikan ini, terdapat beberapa perubahan yang dilakukan untuk menyempurnakan tampilan form. Perubahan pertama yang cukup terlihat adalah penambahan atribut placeholder pada setiap field input. Pada field NIM ditambahkan placeholder "Masukkan NIM", pada field Nama ditambahkan placeholder "Masukkan Nama Lengkap", dan pada textarea Alamat ditambahkan placeholder "Masukkan Alamat Lengkap". Tujuan dari penambahan placeholder ini adalah untuk memberikan petunjuk kepada pengguna tentang data apa yang harus diisi pada masing-masing kolom, sehingga form menjadi lebih informatif dan mudah dipahami. Selain itu, pada field textarea Alamat juga ditambahkan atribut required, sama seperti field NIM dan Nama. Hal ini bertujuan agar pengguna tidak bisa mengosongkan field Alamat saat mengisi form, sehingga semua data penting wajib diisi sebelum form dapat dikirimkan.
