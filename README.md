@@ -61,6 +61,8 @@ Potongan kode tersebut mendefinisikan struktur input untuk kolom Nama dalam sebu
 
 
 4. Code dan hasil bug 4
+
+    Password disembunyikan setelah masuk tabel
    <img width="821" height="48" alt="bug 4 (2)" src="https://github.com/user-attachments/assets/cba3be73-52c6-4c51-a259-6fe048d7247b" />
    <img width="487" height="142" alt="output bug 4" src="https://github.com/user-attachments/assets/4f5dd404-0104-45ba-9a7c-fce98ef417f3" />
 
