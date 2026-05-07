@@ -84,6 +84,10 @@ Penjelasan bug :
 Kode tersebut mengandung bug yang menyebabkan ikon pada kolom **Aksi** tidak muncul atau pecah (*broken image*), seperti yang terlihat pada gambar output. Secara teknis, masalah ini terjadi karena jalur file (*file path*) pada atribut `src="edit.png"` dan `src="trash.png"` tidak valid atau file gambar tersebut tidak ditemukan di direktori yang sama dengan file HTML/JS tersebut. Meskipun secara struktur kode HTML di dalam *template literal* sudah benar menggunakan tag `<a>` untuk fungsi `editRow` dan `deleteRow`, browser gagal memuat aset visualnya sehingga hanya menampilkan ikon *placeholder* gambar rusak.
 
 
+Solusi atau perbaikan :
+
+
+
  
 
 
