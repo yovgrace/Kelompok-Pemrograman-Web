@@ -9,7 +9,7 @@ Nabil
 Yovitha Gracia Tavares_202412044
 
 
-1. Code dan hasil awal bug 1
+1. Code dan hasil bug 1
 
 <img width="1589" height="318" alt="codinganawal png" src="https://github.com/user-attachments/assets/8e201eff-8a32-4607-a794-b1a0d014ecd9" />
 <img width="1884" height="545" alt="output" src="https://github.com/user-attachments/assets/0d25ef58-dd5b-4cfd-b923-4461bea509b4" />
@@ -27,6 +27,28 @@ Pada kode perbaikan ini, terdapat beberapa perubahan yang dilakukan untuk menyem
 
 
 2. Code dan hasil bug 2
+
+<img width="1724" height="198" alt="bug 2" src="https://github.com/user-attachments/assets/dd27eac5-21fd-43f5-96e9-4c26690a16e2" />
+<img width="1895" height="232" alt="output bag 2" src="https://github.com/user-attachments/assets/59a76d5e-9953-47ba-a7e5-08ab29cf0539" />
+
+Penjelasan bug :
+Berdasarkan kode dan output di atas, dropdown tanggal dan tahun sudah berhasil terisi dengan menggunakan perulangan for loop pada JavaScript, dimana tanggal diisi dari 1 sampai 31 dan tahun diisi dari 1990 sampai 2025 menggunakan innerHTML. Namun error yang masih terjadi adalah ketiga dropdown yaitu tanggal, bulan, dan tahun masih tampil secara vertikal ke bawah dan memenuhi lebar penuh layar seperti yang terlihat pada output, padahal seharusnya ketiganya tampil sejajar dalam satu baris. Hal ini terjadi karena pada kode HTML sebelumnya tidak terdapat pembungkus <div style="display: flex; gap: 10px;"> yang berfungsi untuk mengelompokkan ketiga dropdown tersebut agar tampil secara horizontal dalam satu baris.
+
+
+Solusi atau Perbaikan :
+<img width="1708" height="296" alt="perbaikan bug 2" src="https://github.com/user-attachments/assets/333debc2-9717-4709-8a38-936ec1d37614" />
+<img width="1408" height="477" alt="perbaikan bug 2 (2)" src="https://github.com/user-attachments/assets/40ffb37a-a3b5-4732-9614-2cf2fdfc7985" />
+
+Penjelasan perbaikan :
+Berdasarkan kode dan output di atas, perbaikan yang dilakukan adalah dengan membuat fungsi isiTanggal(max) yang mengisi dropdown tanggal secara dinamis sesuai jumlah hari maksimal pada bulan yang dipilih. Fungsi ini dipanggil pertama kali dengan nilai default 31 hari, kemudian ditambahkan addEventListener pada dropdown bulan sehingga ketika bulan berubah, jumlah hari akan menyesuaikan secara otomatis, dimana bulan April, Juni, September, dan November memiliki maksimal 30 hari dan bulan Februari memiliki maksimal 28 hari. Hasil perbaikan ini terlihat jelas pada output dimana ketiga dropdown tanggal, bulan, dan tahun kini sudah tampil sejajar dalam satu baris secara horizontal, dan pada tabel Data Mahasiswa kolom "JK" juga sudah berubah menjadi "Jenis Kelamin" yang lebih deskriptif dibandingkan sebelumnya.
+
+
+3. Code dan hasil bug 3
+   <img width="1532" height="136" alt="bug 3" src="https://github.com/user-attachments/assets/29d1649e-c670-4263-9de5-3510498ede33" />
+   <img width="1232" height="97" alt="output bug 3" src="https://github.com/user-attachments/assets/65954ec7-e892-4322-bbff-1e7fdb536c6f" />
+
+Penjelasan bug :
+Bug pada kode tersebut terjadi karena elemen <form> tidak ditutup dengan tag penutup </form> di akhir baris, yang menyebabkan struktur HTML menjadi tidak valid dan berpotensi merusak tata letak atau fungsionalitas elemen setelahnya. Selain itu, berdasarkan gambar output yang hanya menampilkan kolom "Nama", terdapat indikasi bahwa elemen input "NIM" tertutup atau terdistorsi oleh pengaturan CSS (seperti width: 100% atau display: block) yang belum dikelola dengan baik dalam kontainer form tersebut, sehingga elemen-elemen formulir tidak tersusun secara rapi secara vertikal maupun horizontal.
 
 
    
