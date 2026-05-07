@@ -52,7 +52,11 @@ Bug pada kode tersebut terjadi karena elemen <form> tidak ditutup dengan tag pen
 
 
 Solusi atau perbaikan :
+<img width="825" height="137" alt="perbaikan bug 3" src="https://github.com/user-attachments/assets/88a4b576-f5a8-466e-aeac-8fb2af45e86b" />
+<img width="1286" height="96" alt="output bug 3 (2)" src="https://github.com/user-attachments/assets/a32bdd53-014c-4378-a15d-1d48a87dbd49" />
 
+Penjelasan Perbaikan :
+Potongan kode tersebut mendefinisikan struktur input untuk kolom Nama dalam sebuah formulir HTML. Penggunaan tag <label> berfungsi sebagai judul keterangan, sementara tag <input type="text"> dengan id="nama" digunakan sebagai area pengisian data oleh pengguna. Penambahan atribut required berperan sebagai validasi agar input tidak boleh kosong saat submit, dan atribut placeholder="Masukkan Nama Lengkap" memberikan petunjuk teks di dalam kotak input untuk meningkatkan aspek user experience. Pada tampilan output, terlihat bahwa input tersebut mengisi lebar kontainer secara penuh, yang menandakan adanya penerapan gaya CSS seperti width: 100% agar kolom input terlihat lebih jelas dan mudah diisi.
 
 
 4. Code dan hasil 4
