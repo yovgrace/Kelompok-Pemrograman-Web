@@ -69,7 +69,12 @@ Potongan kode JavaScript tersebut berfungsi untuk memproses data pendaftaran, di
 
   Solusi atau perbaikan :
   <img width="762" height="40" alt="perbaikan bug 4" src="https://github.com/user-attachments/assets/b12fddbe-9834-40e7-8a97-d6051b43bd83" />
-  
+  <img width="377" height="167" alt="output perbaikan bug 4" src="https://github.com/user-attachments/assets/9f3677a6-c4d1-4cdb-9ba6-9b448f30b4ca" />
+
+
+Penjelasan bug :
+ 
+
 
   
 
