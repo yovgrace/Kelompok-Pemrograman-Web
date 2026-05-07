@@ -47,6 +47,7 @@ Berdasarkan kode dan output di atas, perbaikan yang dilakukan adalah dengan memb
    <img width="1532" height="136" alt="bug 3" src="https://github.com/user-attachments/assets/29d1649e-c670-4263-9de5-3510498ede33" />
    <img width="1232" height="97" alt="output bug 3" src="https://github.com/user-attachments/assets/65954ec7-e892-4322-bbff-1e7fdb536c6f" />
 
+
 Penjelasan bug :
 Bug pada kode tersebut terjadi karena elemen <form> tidak ditutup dengan tag penutup </form> di akhir baris, yang menyebabkan struktur HTML menjadi tidak valid dan berpotensi merusak tata letak atau fungsionalitas elemen setelahnya. Selain itu, berdasarkan gambar output yang hanya menampilkan kolom "Nama", terdapat indikasi bahwa elemen input "NIM" tertutup atau terdistorsi oleh pengaturan CSS (seperti width: 100% atau display: block) yang belum dikelola dengan baik dalam kontainer form tersebut, sehingga elemen-elemen formulir tidak tersusun secara rapi secara vertikal maupun horizontal.
 
