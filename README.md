@@ -72,13 +72,16 @@ Potongan kode JavaScript tersebut berfungsi untuk memproses data pendaftaran, di
   <img width="377" height="167" alt="output perbaikan bug 4" src="https://github.com/user-attachments/assets/9f3677a6-c4d1-4cdb-9ba6-9b448f30b4ca" />
 
 
-Penjelasan bug :
+Penjelasan perbaikan :
 Potongan kode perbaikan tersebut menggunakan teknik **masking** untuk menyembunyikan karakter asli kata sandi pada tampilan tabel demi keamanan data. Di dalam elemen `<td>`, variabel `${maskedPassword}` (yang berisi karakter sensor seperti asteris `*****`) ditampilkan secara visual kepada pengguna, sementara nilai aslinya tetap disimpan secara tersembunyi di dalam atribut kustom `data-real-pass="${d.password}"`. Pendekatan ini memastikan bahwa informasi sensitif tidak terbaca secara langsung di layar, namun tetap dapat diakses oleh sistem atau fungsi JavaScript lainnya melalui atribut data tersebut jika diperlukan untuk proses autentikasi atau logika aplikasi lebih lanjut.
 
 
 5. Code dan hasil bug 5
    <img width="805" height="216" alt="bug 5 (2)" src="https://github.com/user-attachments/assets/af2c0095-58f5-426f-bebf-a2c12a3f6815" />
    <img width="226" height="152" alt="bug 5" src="https://github.com/user-attachments/assets/07668e14-a307-4aab-a1b2-4a52508be2db" />
+
+   Penejelasan bug :
+   
 
 
  
