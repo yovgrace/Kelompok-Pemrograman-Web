@@ -61,6 +61,11 @@ Potongan kode tersebut mendefinisikan struktur input untuk kolom Nama dalam sebu
 
 4. Code dan hasil bug 4
    <img width="821" height="48" alt="bug 4 (2)" src="https://github.com/user-attachments/assets/cba3be73-52c6-4c51-a259-6fe048d7247b" />
+   <img width="487" height="142" alt="output bug 4" src="https://github.com/user-attachments/assets/4f5dd404-0104-45ba-9a7c-fce98ef417f3" />
+
+Penjelasan bug   : 
+Potongan kode JavaScript tersebut berfungsi untuk memproses data pendaftaran, di mana baris pertama menggabungkan variabel `tanggal`, `bulan`, dan `tahun` menjadi satu string format tanggal lahir (**ttl**) menggunakan *template literals*. Baris kedua mengambil nilai dari elemen input dengan ID `password` menggunakan perintah `document.getElementById("password").value` untuk disimpan ke dalam konstanta `password`. Masalah atau "bug" pada implementasi ini terlihat dari hasil *output*-nya, di mana nilai kata sandi tampil sebagai teks terbuka (**12345**) di dalam tabel; hal ini menunjukkan bahwa meskipun kodenya secara sintaksis benar, terdapat kesalahan pada tipe input di sisi HTML yang tidak menggunakan `type="password"`, sehingga data sensitif tersebut tidak terenkripsi atau tersembunyi saat ditampilkan kembali.
+  
 
    
 
